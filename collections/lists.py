@@ -1,7 +1,8 @@
-def printList(list, title): 
+def printList(list, title):
     print("-----------" + title + "-----------")
     for i in list:
         print(i)
+
 
 # ------- list - dynamic collection
 numbers = [123, -45.3, 10, 999, 4, 4.5, -2, -4, -560, 1]
@@ -12,7 +13,7 @@ numbers.append(560)
 numbers.extend([1, 7])
 
 # numbers.pop(0) # remove first
-numbers.pop() # remove last
+numbers.pop()  # remove last
 numbers.remove(10)
 
 printList(numbers, "Numbers")
@@ -31,7 +32,7 @@ printList(numbers, "Sorted")
 # --------- list copy
 
 # copy = numbers        # - shallow copy (copy reference)
-copy = numbers.copy()   # - deep copy (copy all elements)
+copy = numbers.copy()  # - deep copy (copy all elements)
 
 numbers[0] = 777
 
