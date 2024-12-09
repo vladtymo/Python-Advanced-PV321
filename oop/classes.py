@@ -74,3 +74,20 @@ order3 = Order("JBL Charge 3", 49, 5)
 print(order1)
 print(order2)
 print(order3)
+
+
+# ---------- inheritance ----------
+class SuperOrder(Order):
+    def __init__(self, name, price, discount, bonus):
+        # set base properties
+        super().__init__(name, price, discount)
+        # create new properties
+        self.bonus = bonus
+
+    def __str__(self):
+        return f"I am super order #{self.number}"
+
+
+superOrder = SuperOrder("Vision Pro", 3499, 0, 333)
+
+print(superOrder)
